@@ -15,7 +15,7 @@ export default function Dropdown({optionList, categoryPath, reducerDispatch} : D
     const [selectedOption, setSelectedOption] = useState("자재선택");
     
     const handleIsOpen = () => {
-        setisOpen(!isOpen)
+        setisOpen(!isOpen);
     }
 
     return(

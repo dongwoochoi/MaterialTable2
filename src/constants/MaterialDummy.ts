@@ -1,4 +1,4 @@
-export const MATERIALDUMMYMAIN = [
+export const MATERIALDUMMY_MAIN = [
     {
         id : "upper",
         label : "갑피"
@@ -15,7 +15,7 @@ export const MATERIALDUMMYMAIN = [
     }
 ]
 
-export const MATERIALDUMMYSUB = [
+export const MATERIALDUMMY_SUB = [
     {
         id : "cover",
         in : "upper",

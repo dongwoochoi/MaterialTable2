@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 
-import { MATERIALDUMMYSUB, MATERIALDUMMYMAIN } from "../constants/MaterialDummy";
+import { MATERIALDUMMY_SUB, MATERIALDUMMY_MAIN } from "../constants/MaterialDummy";
 import Dropdown from "./Dropdown";
 import { useReducer, useEffect } from "react";
 import reducer from "./action";
@@ -24,7 +24,7 @@ export default function MaterialTable(){
             </div>
             <div css={tableBodyStyle(isPc)}>
                 {
-                    MATERIALDUMMYMAIN.map((mainData) => {
+                    MATERIALDUMMY_MAIN.map((mainData) => {
                         return(
                             <div css={mainCellStyle(isPc)} key={mainData.id}>
                                 <div css={mainOptionStyle(isPc)}>
@@ -32,7 +32,7 @@ export default function MaterialTable(){
                                 </div>
                                 <div>
                                     {
-                                        MATERIALDUMMYSUB.filter(item => item.in === mainData.id).map((subData) => {
+                                        MATERIALDUMMY_SUB.filter(item => item.in === mainData.id).map((subData) => {
                                             return(
                                                 <div css={subCellStyle(isPc)} key={subData.id}>
                                                     <div css={subOptionStyle(isPc)}>
