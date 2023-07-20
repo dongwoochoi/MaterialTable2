@@ -25,7 +25,7 @@ export default function Dropdown({optionList, categoryPath, reducerDispatch} : D
             </div>
             <div css={showContainerStyle(isOpen)}>
                 {
-                    optionList.map((option) => {
+                    optionList.map(option => {
                         return(
                             <p css={optionListStyle} key={option} onClick={() => {
                                 setSelectedOption(option);

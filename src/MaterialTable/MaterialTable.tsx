@@ -24,7 +24,7 @@ export default function MaterialTable(){
             </div>
             <div css={tableBodyStyle(isPc)}>
                 {
-                    MATERIALDUMMY_MAIN.map((mainData) => {
+                    MATERIALDUMMY_MAIN.map(mainData => {
                         return(
                             <div css={mainCellStyle(isPc)} key={mainData.id}>
                                 <div css={mainOptionStyle(isPc)}>
@@ -32,7 +32,7 @@ export default function MaterialTable(){
                                 </div>
                                 <div>
                                     {
-                                        MATERIALDUMMY_SUB.filter(item => item.in === mainData.id).map((subData) => {
+                                        MATERIALDUMMY_SUB.filter(item => item.in === mainData.id).map(subData => {
                                             return(
                                                 <div css={subCellStyle(isPc)} key={subData.id}>
                                                     <div css={subOptionStyle(isPc)}>
