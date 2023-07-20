@@ -20,7 +20,7 @@ export default function MaterialTable(){
                 <p css={textTitleStyle}>자재 선택*</p>
             </div>
             <div>
-                <p css={textDescripttionStyle}>제작하고자 하는 신발의 자재를 분류별로 빠짐없이 선택해주세요</p>
+                <p css={textDescriptionStyle}>제작하고자 하는 신발의 자재를 분류별로 빠짐없이 선택해주세요</p>
             </div>
             <div css={tableBodyStyle(isPc)}>
                 {
@@ -45,7 +45,7 @@ export default function MaterialTable(){
                                                             subCategory : subData.label}
                                                         }
                                                         reducerDispatch={dispatch}
-                                                        />
+                                                    />
                                                 </div>
                                             );
                                         })
@@ -66,7 +66,7 @@ const textTitleStyle = {
     marginBottom : "16px",
 }
 
-const textDescripttionStyle = {
+const textDescriptionStyle = {
     fontSize: "0.875rem",
 }
 
